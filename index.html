@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="CSS/bootstrap.min.css">
+        <script src="JS/jquery-3.6.0.min.js"></script>
+        <script src="JS/bootstrap.min.js"></script>
+        <script src="JS/index.js"></script>
+    </head>
+    <body>
+        <div
+            class="container">
+            <!-- header -->
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="./Images/HEADER.PNG" alt="" width="100%">
+
+                </div>
+            </div>
+            <!-- header -->
+            <!-- nav -->
+            <div class="row" >
+                <nav class="navbar navbar-expand-sm navbar-light">
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-info" href="#">Đăng nhập</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-info" href="#" id="openmodal">Đăng ký</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- nav -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center">DANH SÁCH ĐỘI TUYỂN VIỆT NAM</h1>
+                </div>
+            </div>
+
+            <!-- table -->
+            <div class="row">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Họ Tên</th>
+                            <th>Số áo</th>
+                            <th>Câu Lạc bộ</th>
+                            <th>Ngày tập trung</th>
+                            <th>Điện thoại</th>
+                            <th>Ảnh đại diện</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <!-- table -->
+            <!-- Modal -->
+            <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title" style="text-align: center;">THÔNG TIN CÁ NHÂN</h2>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="">Họ Tên</label>
+                                <input type="text" name="" id="ten" placeholder="Nhập họ tên">
+                                <div id="tbten" class="text-danger">*</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Số áo</label>
+                                <input type="text" name="" id="soao" placeholder="Nhập số áo đội tuyển">
+                                <div id="tbsoao" class="text-danger">*</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Câu lạc bộ</label>
+                                <input type="text" name="" id="clb" placeholder="Nhập câu lạc bộ của bạn">
+                                <div id="tbclb" class="text-danger">*</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Ngày tập trung</label>
+                                <input type="date" name="" id="ngay">
+                                <div id="tbngay" class="text-danger">*</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="">so dien thoai</label>
+                                <input type="text" name="" id="sdt" placeholder="0xxx-xxx-xxx">
+                                <div id="tbsdt" class="text-danger">*</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Ảnh đại diện</label>
+                                <input type="file" id="img" name="img" accept="image/*">
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Lưu" id="luubtn">
+                                <small id="tbluu" class="text-muted">*</small>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <!-- footer -->
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">SVTH: Phạm Hà Nam    Mã sinh viên: 20069861 Lớp: DHCNTT16C</p>
+                </div>
+            </div>
+            <!-- footer -->
+        </div>
+    </body>
+</html>
